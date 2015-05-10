@@ -5,13 +5,141 @@
     android:orientation="vertical" >
 
 
-
-    <Button
+    <ListView
         android:id="@+id/acidity"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="@string/acidity"
         android:onClick="showInfoOnClick"
         />
+
+    <ListView
+        android:id="@+id/acne"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/acne"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/blackheads"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/blackheads"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/cold"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/cold"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/constipation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/constipation"
+        android:onClick="showInfoOnClick"
+        />
+
+
+    <ListView
+        android:id="@+id/cough"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/cough"
+        android:onClick="showInfoOnClick"
+        />
+
+
+    <ListView
+        android:id="@+id/dandruff"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/dandruff"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/diarrhoea"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/diarrhoea"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/dehydration"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/dehydration"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/flu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/flu"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/fever"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/fever"
+        android:onClick="showInfoOnClick"
+        />
+
+
+    <ListView
+        android:id="@+id/hair_loss"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/hair_loss"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/migraine"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/migraine"
+        android:onClick="showInfoOnClick"
+        />
+
+
+    <ListView
+        android:id="@+id/nausea"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/nausea"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/tired_eyes"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/tired_eyes"
+        android:onClick="showInfoOnClick"
+        />
+
+    <ListView
+        android:id="@+id/vomiting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/vomiting"
+        android:onClick="showInfoOnClick"
+        />
+
+
+
+
+
 
 </LinearLayout>
