@@ -6,34 +6,24 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.app.Activity;
 
 import com.learningv.desiilaaz.utils.Constants.StringConstants;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
     public final static String EXTRA_MESSAGE = "com.learning.DesiIlaaz.MESSAGE";
-    private android.view.View.OnClickListener continueClick;
+
     Intent displayInfoIntent;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_main);
         displayInfoIntent = new Intent(this, DisplayRemedyActivity.class);
     }
 
-
-    continueClick = new android.view.View.OnClickListener() {
-
-        public void onClick(View view)
-        {
-
-        }
-
-    };
 
     /**
      * @param view
