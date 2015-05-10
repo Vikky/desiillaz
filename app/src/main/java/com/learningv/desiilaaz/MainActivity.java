@@ -6,12 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-
-
 
 public class MainActivity extends ActionBarActivity {
-
 
 
     @Override
@@ -23,12 +19,8 @@ public class MainActivity extends ActionBarActivity {
 
     public void continueToDisplay(View view) {
         Intent intent = new Intent(this, DisplayAilmentsActivity.class);
-        //Button continueButton = (Button) findViewById(R.id.btnContinue);
-        //String message = continueButton.getText().toString();
-        //intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
-
 
 
     @Override

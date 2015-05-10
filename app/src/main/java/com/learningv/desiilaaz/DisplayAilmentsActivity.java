@@ -29,27 +29,26 @@ public class DisplayAilmentsActivity extends ListActivity {
         displayRemedyIntent = new Intent(this, DisplayRemedyActivity.class);
         //setContentView(R.layout.activity_display_ailments);
 
-
         List<String> ailmentsList = getAilmentNames();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, ailmentsList);
         setListAdapter(adapter);
+
         ListView listView = getListView();
         listView.setTextFilterEnabled(true);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-
                 String item = ((TextView) view).getText().toString();
-                System.out.println("Clicked : " + item);
                 putAilmentName(item);
             }
         });
     }
 
     /**
-     * Puts ailment name in Intent to be used to show remedy.
+     * Puts ailment name in Intent, to be used to show remedy.
+     *
      * @param ailmentName
      */
     public void putAilmentName(String ailmentName) {
@@ -59,7 +58,6 @@ public class DisplayAilmentsActivity extends ListActivity {
     }
 
     /**
-     *
      * @return
      */
     public List<String> getAilmentNames() {

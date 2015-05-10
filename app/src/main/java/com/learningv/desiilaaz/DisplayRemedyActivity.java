@@ -31,59 +31,15 @@ public class DisplayRemedyActivity extends ListActivity {
     }
 
 
-    private List<String> getRemedyInfo(String ailment) {
+    private List<String> getRemedyInfo(String ailmentName) {
 
         List<String> infoArray = new ArrayList<String>();
-
-        switch (ailment) {
-            case StringConstants.ACIDITY :
-                infoArray.addAll(Ailments.ACIDITY.getRemedies());
+        Ailments[] ailmentArray = Ailments.values();
+        for (Ailments ailment : ailmentArray) {
+            if(ailmentName.equalsIgnoreCase(ailment.getDescription())){
+                infoArray.addAll(ailment.getRemedies());
                 break;
-            case StringConstants.ACNE :
-                infoArray.addAll(Ailments.ACNE.getRemedies());
-                break;
-            case StringConstants.BLACKHEADS :
-                infoArray.addAll(Ailments.BLACKHEADS.getRemedies());
-                break;
-            case StringConstants.COMMON_COLD :
-                infoArray.addAll(Ailments.COMMON_COLD.getRemedies());
-                break;
-            case StringConstants.CONSTIPATION :
-                infoArray.addAll(Ailments.CONSTIPATION.getRemedies());
-                break;
-            case StringConstants.COUGH :
-                infoArray.addAll(Ailments.COUGH.getRemedies());
-                break;
-            case StringConstants.DANDRUFF :
-                infoArray.addAll(Ailments.DANDRUFF.getRemedies());
-                break;
-            case StringConstants.DIARRHOEA :
-                infoArray.addAll(Ailments.DIARRHOEA.getRemedies());
-                break;
-            case StringConstants.DEHYDRATION:
-                infoArray.addAll(Ailments.DEHYDRATION.getRemedies());
-                break;
-            case StringConstants.FEVER :
-                infoArray.addAll(Ailments.FEVER.getRemedies());
-                break;
-            case StringConstants.FLU :
-                infoArray.addAll(Ailments.FLU.getRemedies());
-                break;
-            case StringConstants.HAIR_LOSS:
-                infoArray.addAll(Ailments.HAIR_LOSS.getRemedies());
-                break;
-            case StringConstants.MIGRAINE:
-                infoArray.addAll(Ailments.MIGRAINE.getRemedies());
-                break;
-            case StringConstants.NAUSEA:
-                infoArray.addAll(Ailments.NAUSEA.getRemedies());
-                break;
-            case StringConstants.TIRED_EYES:
-                infoArray.addAll(Ailments.TIRED_EYES.getRemedies());
-                break;
-            case StringConstants.VOMITING:
-                infoArray.addAll(Ailments.VOMITING.getRemedies());
-                break;
+            }
         }
         return infoArray;
     }
