@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="diseaseText">false</item>
+    <item type="id" name="mainLayout">false</item>
+    <item type="id" name="searchText">false</item>
+    <item type="id" name="adContainer">false</item>
+    <item type="id" name="scrllvwNo1">false</item>
+    <item type="id" name="textView1">false</item>
+    <item type="id" name="btnContinue">false</item>
+    <item type="id" name="remedyText">false</item>
+    <item type="id" name="abs__home_wrapper">false</item>
+    <item type="id" name="abs__actions">false</item>
+    <item type="id" name="abs__iprogress">false</item>
+    <item type="id" name="abs__nav_list">false</item>
+    <item type="id" name="abs__custom">false</item>
+    <item type="id" name="abs__nav_tabs">false</item>
+    <item type="id" name="abs__up">false</item>
+    <item type="id" name="abs__home">false</item>
+    <item type="id" name="abs__nav_tabs_layout">false</item>
+    <item type="id" name="abs__item_icon">false</item>
+    <item type="id" name="abs__item_text">false</item>
+    <item type="id" name="abs__item_custom">false</item>
+    <item type="id" name="abs__tab_icon">false</item>
+    <item type="id" name="abs__tab">false</item>
+    <item type="id" name="abs__tab_custom">false</item>
+    <item type="id" name="abs__action_bar_title">false</item>
+    <item type="id" name="abs__action_bar_subtitle">false</item>
+    <item type="id" name="abs__action_bar_container">false</item>
+    <item type="id" name="abs__action_bar">false</item>
+    <item type="id" name="abs__content">false</item>
+</resources>
