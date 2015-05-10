@@ -21,7 +21,7 @@ public class DisplayRemedyActivity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         Intent intent = getIntent();
-        String ailment = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String ailment = intent.getStringExtra(DisplayAilmentsActivity.EXTRA_MESSAGE);
         List<String> remedyInfo = getRemedyInfo(ailment);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,

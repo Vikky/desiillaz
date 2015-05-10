@@ -6,84 +6,29 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
-import com.learningv.desiilaaz.utils.Constants.StringConstants;
 
 
 public class MainActivity extends ActionBarActivity {
 
-    public final static String EXTRA_MESSAGE = "com.learning.DesiIlaaz.MESSAGE";
-
-    Intent displayInfoIntent;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        displayInfoIntent = new Intent(this, DisplayRemedyActivity.class);
+        setContentView(R.layout.main);
+
     }
 
-
-    /**
-     * @param view
-     */
-    public void showInfoOnClick(View view) {
-
-        switch (view.getId()) {
-            case R.id.acidity:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.ACIDITY);
-                break;
-            case R.id.acne:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.ACNE);
-                break;
-            case R.id.blackheads:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.BLACKHEADS);
-                break;
-            case R.id.cold:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.COMMON_COLD);
-                break;
-            case R.id.constipation:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.CONSTIPATION);
-                break;
-            case R.id.cough:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.COUGH);
-                break;
-            case R.id.dandruff:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.DANDRUFF);
-                break;
-            case R.id.diarrhoea:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.DIARRHOEA);
-                break;
-            case R.id.dehydration:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.DEHYDRATION);
-                break;
-            case R.id.fever:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.FEVER);
-                break;
-            case R.id.flu:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.FLU);
-                break;
-            case R.id.hair_loss:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.HAIR_LOSS);
-                break;
-            case R.id.migraine:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.MIGRAINE);
-                break;
-
-            case R.id.nausea:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.NAUSEA);
-                break;
-            case R.id.tired_eyes:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.TIRED_EYES);
-                break;
-            case R.id.vomiting:
-                displayInfoIntent.putExtra(EXTRA_MESSAGE, StringConstants.VOMITING);
-                break;
-
-        }
-        startActivity(displayInfoIntent);
+    public void continueToDisplay(View view) {
+        Intent intent = new Intent(this, DisplayAilmentsActivity.class);
+        //Button continueButton = (Button) findViewById(R.id.btnContinue);
+        //String message = continueButton.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
+
 
 
     @Override

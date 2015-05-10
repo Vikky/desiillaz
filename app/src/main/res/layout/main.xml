@@ -1,15 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <ScrollView android:id="@id/scrllvwNo1" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <TextView android:textSize="24.0sp" android:textStyle="bold" android:gravity="left" android:padding="2.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Introduction :" />
-            <TextView android:textSize="20.0sp" android:gravity="left" android:id="@id/textView1" android:paddingBottom="4.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Desi illaz contains the Indian home remedies for the common problems which an individual has in its daily life, the problems like Cough, Common Cold, Bad Odour etc. These nuskhe or remedies are the one which were suggested by our ancestors and are still used." />
-            <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disclaimer :" />
-            <TextView android:textSize="15.0sp" android:textStyle="italic" android:gravity="left" android:paddingBottom="4.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This application is for informational purposes only, and is not a substitute for medical advice or diagnosis." />
-            <Button android:textSize="20.0sp" android:layout_gravity="center" android:id="@id/btnContinue" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Continue" />
-            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/adContainer" android:layout_width="fill_parent" android:layout_height="75.0px"
-                xmlns:android="http://schemas.android.com/apk/res/android" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@id/scrllvwNo1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="2.0px"
+                android:text="Introduction :"
+                android:textSize="24.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="4.0px"
+                android:text="Desi illaz contains the Indian home remedies for the common problems which an individual has in its daily life, the problems like Cough, Common Cold, Bad Odour etc. These nuskhe or remedies are the one which were suggested by our ancestors and are still used."
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Disclaimer :"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="4.0px"
+                android:text="This application is for informational purposes only, and is not a substitute for medical advice or diagnosis."
+                android:textSize="15.0sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@id/btnContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="12.0px"
+                android:paddingRight="12.0px"
+                android:text="Continue"
+                android:onClick="continueToDisplay"
+                android:textSize="20.0sp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@id/adContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="75.0px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
